@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18245BBE25420F8600641128 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18245BBD25420F8600641128 /* AppDelegate.swift */; };
+		18245BC025420F8600641128 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 18245BBF25420F8600641128 /* art.scnassets */; };
+		18245BC225420F8600641128 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18245BC125420F8600641128 /* ViewController.swift */; };
+		18245BC525420F8600641128 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18245BC325420F8600641128 /* Main.storyboard */; };
+		18245BC725420F8600641128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18245BC625420F8600641128 /* Assets.xcassets */; };
+		18245BCA25420F8600641128 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18245BC825420F8600641128 /* LaunchScreen.storyboard */; };
+		18245BD525420F8700641128 /* _40_InteriorAR3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18245BD425420F8700641128 /* _40_InteriorAR3DTests.swift */; };
+		18245BE025420F8700641128 /* _40_InteriorAR3DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18245BDF25420F8700641128 /* _40_InteriorAR3DUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18245BD125420F8700641128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18245BB225420F8600641128 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18245BB925420F8600641128;
+			remoteInfo = "740-InteriorAR3D";
+		};
+		18245BDC25420F8700641128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18245BB225420F8600641128 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18245BB925420F8600641128;
+			remoteInfo = "740-InteriorAR3D";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18245BBA25420F8600641128 /* 740-InteriorAR3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "740-InteriorAR3D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18245BBD25420F8600641128 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18245BBF25420F8600641128 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		18245BC125420F8600641128 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18245BC425420F8600641128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18245BC625420F8600641128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18245BC925420F8600641128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18245BCB25420F8600641128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18245BD025420F8700641128 /* 740-InteriorAR3DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "740-InteriorAR3DTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18245BD425420F8700641128 /* _40_InteriorAR3DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _40_InteriorAR3DTests.swift; sourceTree = "<group>"; };
+		18245BD625420F8700641128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18245BDB25420F8700641128 /* 740-InteriorAR3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "740-InteriorAR3DUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18245BDF25420F8700641128 /* _40_InteriorAR3DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _40_InteriorAR3DUITests.swift; sourceTree = "<group>"; };
+		18245BE125420F8700641128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18245BB725420F8600641128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18245BCD25420F8700641128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18245BD825420F8700641128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18245BB125420F8600641128 = {
+			isa = PBXGroup;
+			children = (
+				18245BBC25420F8600641128 /* 740-InteriorAR3D */,
+				18245BD325420F8700641128 /* 740-InteriorAR3DTests */,
+				18245BDE25420F8700641128 /* 740-InteriorAR3DUITests */,
+				18245BBB25420F8600641128 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18245BBB25420F8600641128 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18245BBA25420F8600641128 /* 740-InteriorAR3D.app */,
+				18245BD025420F8700641128 /* 740-InteriorAR3DTests.xctest */,
+				18245BDB25420F8700641128 /* 740-InteriorAR3DUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18245BBC25420F8600641128 /* 740-InteriorAR3D */ = {
+			isa = PBXGroup;
+			children = (
+				18245BBD25420F8600641128 /* AppDelegate.swift */,
+				18245BBF25420F8600641128 /* art.scnassets */,
+				18245BC125420F8600641128 /* ViewController.swift */,
+				18245BC325420F8600641128 /* Main.storyboard */,
+				18245BC625420F8600641128 /* Assets.xcassets */,
+				18245BC825420F8600641128 /* LaunchScreen.storyboard */,
+				18245BCB25420F8600641128 /* Info.plist */,
+			);
+			path = "740-InteriorAR3D";
+			sourceTree = "<group>";
+		};
+		18245BD325420F8700641128 /* 740-InteriorAR3DTests */ = {
+			isa = PBXGroup;
+			children = (
+				18245BD425420F8700641128 /* _40_InteriorAR3DTests.swift */,
+				18245BD625420F8700641128 /* Info.plist */,
+			);
+			path = "740-InteriorAR3DTests";
+			sourceTree = "<group>";
+		};
+		18245BDE25420F8700641128 /* 740-InteriorAR3DUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18245BDF25420F8700641128 /* _40_InteriorAR3DUITests.swift */,
+				18245BE125420F8700641128 /* Info.plist */,
+			);
+			path = "740-InteriorAR3DUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18245BB925420F8600641128 /* 740-InteriorAR3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18245BE425420F8700641128 /* Build configuration list for PBXNativeTarget "740-InteriorAR3D" */;
+			buildPhases = (
+				18245BB625420F8600641128 /* Sources */,
+				18245BB725420F8600641128 /* Frameworks */,
+				18245BB825420F8600641128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "740-InteriorAR3D";
+			productName = "740-InteriorAR3D";
+			productReference = 18245BBA25420F8600641128 /* 740-InteriorAR3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18245BCF25420F8700641128 /* 740-InteriorAR3DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18245BE725420F8700641128 /* Build configuration list for PBXNativeTarget "740-InteriorAR3DTests" */;
+			buildPhases = (
+				18245BCC25420F8700641128 /* Sources */,
+				18245BCD25420F8700641128 /* Frameworks */,
+				18245BCE25420F8700641128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18245BD225420F8700641128 /* PBXTargetDependency */,
+			);
+			name = "740-InteriorAR3DTests";
+			productName = "740-InteriorAR3DTests";
+			productReference = 18245BD025420F8700641128 /* 740-InteriorAR3DTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18245BDA25420F8700641128 /* 740-InteriorAR3DUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18245BEA25420F8700641128 /* Build configuration list for PBXNativeTarget "740-InteriorAR3DUITests" */;
+			buildPhases = (
+				18245BD725420F8700641128 /* Sources */,
+				18245BD825420F8700641128 /* Frameworks */,
+				18245BD925420F8700641128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18245BDD25420F8700641128 /* PBXTargetDependency */,
+			);
+			name = "740-InteriorAR3DUITests";
+			productName = "740-InteriorAR3DUITests";
+			productReference = 18245BDB25420F8700641128 /* 740-InteriorAR3DUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18245BB225420F8600641128 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					18245BB925420F8600641128 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					18245BCF25420F8700641128 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 18245BB925420F8600641128;
+					};
+					18245BDA25420F8700641128 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 18245BB925420F8600641128;
+					};
+				};
+			};
+			buildConfigurationList = 18245BB525420F8600641128 /* Build configuration list for PBXProject "740-InteriorAR3D" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18245BB125420F8600641128;
+			productRefGroup = 18245BBB25420F8600641128 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18245BB925420F8600641128 /* 740-InteriorAR3D */,
+				18245BCF25420F8700641128 /* 740-InteriorAR3DTests */,
+				18245BDA25420F8700641128 /* 740-InteriorAR3DUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18245BB825420F8600641128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18245BC025420F8600641128 /* art.scnassets in Resources */,
+				18245BCA25420F8600641128 /* LaunchScreen.storyboard in Resources */,
+				18245BC725420F8600641128 /* Assets.xcassets in Resources */,
+				18245BC525420F8600641128 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18245BCE25420F8700641128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18245BD925420F8700641128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18245BB625420F8600641128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18245BC225420F8600641128 /* ViewController.swift in Sources */,
+				18245BBE25420F8600641128 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18245BCC25420F8700641128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18245BD525420F8700641128 /* _40_InteriorAR3DTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18245BD725420F8700641128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18245BE025420F8700641128 /* _40_InteriorAR3DUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18245BD225420F8700641128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18245BB925420F8600641128 /* 740-InteriorAR3D */;
+			targetProxy = 18245BD125420F8700641128 /* PBXContainerItemProxy */;
+		};
+		18245BDD25420F8700641128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18245BB925420F8600641128 /* 740-InteriorAR3D */;
+			targetProxy = 18245BDC25420F8700641128 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18245BC325420F8600641128 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18245BC425420F8600641128 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18245BC825420F8600641128 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18245BC925420F8600641128 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18245BE225420F8700641128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18245BE325420F8700641128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18245BE525420F8700641128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "740-InteriorAR3D/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.-40-InteriorAR3D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18245BE625420F8700641128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "740-InteriorAR3D/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.-40-InteriorAR3D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18245BE825420F8700641128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "740-InteriorAR3DTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.-40-InteriorAR3DTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/740-InteriorAR3D.app/740-InteriorAR3D";
+			};
+			name = Debug;
+		};
+		18245BE925420F8700641128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "740-InteriorAR3DTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.-40-InteriorAR3DTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/740-InteriorAR3D.app/740-InteriorAR3D";
+			};
+			name = Release;
+		};
+		18245BEB25420F8700641128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "740-InteriorAR3DUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.-40-InteriorAR3DUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "740-InteriorAR3D";
+			};
+			name = Debug;
+		};
+		18245BEC25420F8700641128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "740-InteriorAR3DUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.-40-InteriorAR3DUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "740-InteriorAR3D";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18245BB525420F8600641128 /* Build configuration list for PBXProject "740-InteriorAR3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18245BE225420F8700641128 /* Debug */,
+				18245BE325420F8700641128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18245BE425420F8700641128 /* Build configuration list for PBXNativeTarget "740-InteriorAR3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18245BE525420F8700641128 /* Debug */,
+				18245BE625420F8700641128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18245BE725420F8700641128 /* Build configuration list for PBXNativeTarget "740-InteriorAR3DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18245BE825420F8700641128 /* Debug */,
+				18245BE925420F8700641128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18245BEA25420F8700641128 /* Build configuration list for PBXNativeTarget "740-InteriorAR3DUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18245BEB25420F8700641128 /* Debug */,
+				18245BEC25420F8700641128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18245BB225420F8600641128 /* Project object */;
+}
