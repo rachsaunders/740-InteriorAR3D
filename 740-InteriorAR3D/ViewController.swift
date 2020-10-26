@@ -61,15 +61,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             // if there was a hit test from above then this will happen
             if let hitResult = results.first {
                 
-                let boxScene = SCNScene(named: "art.scnassets/bluebox.scn")!
+                let boxScene = SCNScene(named: "art.scnassets/portal.scn")!
                 
-                if let boxNode = boxScene.rootNode.childNode(withName: "bluebox", recursively: true) {
+                if let boxNode = boxScene.rootNode.childNode(withName: "portal", recursively: true) {
                     
                     // position of box node
                     // I changed the y value to put the box on the plane rather than through it, it is half of the value of y on the blue box node
                     boxNode.position = SCNVector3(
                         x: hitResult.worldTransform.columns.3.x,
-                        y: hitResult.worldTransform.columns.3.y + 0.35,
+                        y: hitResult.worldTransform.columns.3.y + 0.05,
                         z: hitResult.worldTransform.columns.3.z)
                     
                     // add the box to the scene
