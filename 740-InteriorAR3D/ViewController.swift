@@ -16,12 +16,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set the view's delegate
         sceneView.delegate = self
         
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,8 +32,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
-        // detect the plane horizontal
+        // setting plane detection to horizontal so that we are able to detect horizontal planes.
         configuration.planeDetection = .horizontal
+
 
         // Run the view's session
         sceneView.session.run(configuration)
@@ -44,81 +47,86 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
     
-    // when user touches screen...
+    // called when touches are detected on the screen
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        // first touch
         if let touch = touches.first {
             
-            // gives location of where user touched the 2D screen
+            // gives us the location of where we touched on the 2D screen.
             let touchLocation = touch.location(in: sceneView)
             
-            // get 3D coordinates from the 2D coordinates from the user touching the screen
-            // only cnosiered if it is on an existing plane that was detected by the user
+            // hitTest is performed to get the 3D coordinates corresponding to the 2D coordinates that we got from touching the screen.
+            // That 3d coordinate will only be considered when it is on the existing plane that we detected.
             let results = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
             
-
-            // if there was a hit test from above then this will happen
+            // if we have got some results using the hitTest then do this
             if let hitResult = results.first {
                 
+
                 let boxScene = SCNScene(named: "art.scnassets/portal.scn")!
                 
                 if let boxNode = boxScene.rootNode.childNode(withName: "portal", recursively: true) {
                     
-                    // position of box node
-                    // I changed the y value to put the box on the plane rather than through it, it is half of the value of y on the blue box node
-                    boxNode.position = SCNVector3(
-                        x: hitResult.worldTransform.columns.3.x,
-                        y: hitResult.worldTransform.columns.3.y + 0.05,
-                        z: hitResult.worldTransform.columns.3.z)
                     
-                    // add the box to the scene
+                    boxNode.position = SCNVector3(x: hitResult.worldTransform.columns.3.x, y: hitResult.worldTransform.columns.3.y + 0.05, z: hitResult.worldTransform.columns.3.z)
+                    
+                    // finally the box is added to the scene.
                     sceneView.scene.rootNode.addChildNode(boxNode)
+                    
                 }
+                
+                
             }
             
         }
     }
     
-    // called when a plane is detected (in my case horizontal from the code above)
     
+    // this is a delegate method which comes from ARSCNViewDelegate, and this method is called when a horizontal plane is detected.
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         
         if anchor is ARPlaneAnchor {
             
+            // anchors can be of many types, as we are just dealing with horizontal plane detection we need to downcast anchor to ARPlaneAnchor
             let planeAnchor = anchor as! ARPlaneAnchor
             
-            // plane geometry with the help of dimentions I got using plane anchor.
-            // sets width of shape the same width of the plane
+            // creating a plane geometry with the help of dimentions we got using plane anchor.
             let plane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
             
-            // node aka the position
+            // a node is basically a position.
             let planeNode = SCNNode()
             
-            // set position of the plane geometry to the position using plane anchor
+            // setting the position of the plane geometry to the position we got using plane anchor.
             planeNode.position = SCNVector3(x: planeAnchor.center.x, y: 0, z: planeAnchor.center.z)
             
-            // when plane is created it is made by xy plane instead of xz plane, so it rotates on the x axis
+            // when a plane is created its created in xy plane instead of xz plane, so we need to rotate it along x axis.
             planeNode.transform = SCNMatrix4MakeRotation(-Float.pi/2, 1, 0, 0)
             
-            // create material object
+            //create a material object
             let gridMaterial = SCNMaterial()
             
-            // set material as an image
+            //setting the material as an image. A material can also be set to a color.
             gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
             
-            // assigns material to the plane
+            // assigning the material to the plane
             plane.materials = [gridMaterial]
             
-            // assigning position to the plane
+            
+            // assigning the position to the plane
             planeNode.geometry = plane
             
-            // adding plane node into the scene yay
+            //adding the plane node in our scene
             node.addChildNode(planeNode)
             
-        } else {
+            
+            
+        }
+        
+        else {
+            
             return
         }
         
     }
+    
 }

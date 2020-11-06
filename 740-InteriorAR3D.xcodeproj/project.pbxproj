@@ -15,6 +15,10 @@
 		18245BCA25420F8600641128 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18245BC825420F8600641128 /* LaunchScreen.storyboard */; };
 		18245BD525420F8700641128 /* _40_InteriorAR3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18245BD425420F8700641128 /* _40_InteriorAR3DTests.swift */; };
 		18245BE025420F8700641128 /* _40_InteriorAR3DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18245BDF25420F8700641128 /* _40_InteriorAR3DUITests.swift */; };
+		1834AA4625557D13002A3148 /* exampleimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1834AA4525557D12002A3148 /* exampleimage.png */; };
+		1834AA4B25557D1F002A3148 /* wallpattern1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1834AA4A25557D1F002A3148 /* wallpattern1.jpg */; };
+		1834AA5025557DAC002A3148 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 1834AA4F25557DAC002A3148 /* grid.png */; };
+		18F8EADC2553491400DA68D8 /* tardis interior.dae in Resources */ = {isa = PBXBuildFile; fileRef = 18F8EADB2553491400DA68D8 /* tardis interior.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		18245BDB25420F8700641128 /* 740-InteriorAR3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "740-InteriorAR3DUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18245BDF25420F8700641128 /* _40_InteriorAR3DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _40_InteriorAR3DUITests.swift; sourceTree = "<group>"; };
 		18245BE125420F8700641128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1834AA4525557D12002A3148 /* exampleimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exampleimage.png; sourceTree = "<group>"; };
+		1834AA4A25557D1F002A3148 /* wallpattern1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpattern1.jpg; sourceTree = "<group>"; };
+		1834AA4F25557DAC002A3148 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		18F8EADB2553491400DA68D8 /* tardis interior.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "tardis interior.dae"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				18245BC625420F8600641128 /* Assets.xcassets */,
 				18245BC825420F8600641128 /* LaunchScreen.storyboard */,
 				18245BCB25420F8600641128 /* Info.plist */,
+				18F8EADB2553491400DA68D8 /* tardis interior.dae */,
+				1834AA4525557D12002A3148 /* exampleimage.png */,
+				1834AA4A25557D1F002A3148 /* wallpattern1.jpg */,
+				1834AA4F25557DAC002A3148 /* grid.png */,
 			);
 			path = "740-InteriorAR3D";
 			sourceTree = "<group>";
@@ -231,10 +243,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1834AA4625557D13002A3148 /* exampleimage.png in Resources */,
+				1834AA5025557DAC002A3148 /* grid.png in Resources */,
 				18245BC025420F8600641128 /* art.scnassets in Resources */,
 				18245BCA25420F8600641128 /* LaunchScreen.storyboard in Resources */,
 				18245BC725420F8600641128 /* Assets.xcassets in Resources */,
+				1834AA4B25557D1F002A3148 /* wallpattern1.jpg in Resources */,
 				18245BC525420F8600641128 /* Main.storyboard in Resources */,
+				18F8EADC2553491400DA68D8 /* tardis interior.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
